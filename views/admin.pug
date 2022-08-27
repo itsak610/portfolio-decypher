@@ -1,0 +1,26 @@
+extends admin-layout
+
+block content
+    style.
+      .form-title{text-align:center !important}.admin p{text-align:center}
+      .admin ul{list-style-type:none; text-align:center; padding: 50px 0 !important;font-family:'Chakra Petch';font-size:2vw;}.admin ul li{padding:13px}
+    .card.admin
+      h1.form-title Admin Panel 
+      p Here comes the admin panel. WELCOME! Cyche's very own secret panel meant just for (c)ypherites.
+      ul
+        li 
+          a(href='/admin/logs')#admin2 Check Logs
+        li
+          a(href='/admin/add-question')#admin1 Add Questions
+        li
+          a(href='/admin/hints')#admin6 Add Hints
+        li 
+          a(href='/admin/teams')#admin3 View/Edit Teams
+        li
+          a(href='/admin/questions')#admin4 View/Edit Questions
+        li
+          a(href='/admin/disqualify')#admin5 Disqualify Teams
+        li
+          a(href='/admin/requalify')#admin6 Requalify Teams
+        li
+          a(href='/admin/email') Send Email

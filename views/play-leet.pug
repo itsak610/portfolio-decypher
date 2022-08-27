@@ -1,0 +1,398 @@
+extends layout
+
+block content
+  style.
+    @import url(https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap);@import url(https://fonts.googleapis.com/css2?family=Comfortaa&display=swap);@import url(https://fonts.googleapis.com/css2?family=Poppins&display=swap);header > *{-webkit-tap-highlight-color:transparent;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}*,:after,:before{-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-sizing:border-box}body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.5;font-family:'Chakra Petch',sans-serif;margin:0;height:100%;min-height:100%;color:#fff;background:#050b18;letter-spacing:.1em;cursor:default;overflow-x:scroll}::-webkit-scrollbar{width:4px;height:0}::-webkit-scrollbar-track{background:#03070e}::-webkit-scrollbar-thumb{background:linear-gradient(to bottom,#ff2079,#41e7fe);border-radius:30px;opacity:.8}.temp-body{opacity:.05;transition:all .2s ease-in-out}::selection{background:#ee448e;color:#fff}a{cursor:pointer}.column,.columns,.container{width:100%;-moz-box-sizing:border-box;box-sizing:border-box}.container{position:relative;width:100%;margin:0 auto}.column,.columns{float:left}.container:after,.row:after{content:'';display:table;clear:both}a{color:inherit;text-decoration:none}a:hover{color:#e309a2}.left{text-align:left}.right{text-align:right}.center{text-align:center}h2.center{font-family:'Chakra Petch',sans-serif;font-size:20px;margin-top:40px}footer h2{background:linear-gradient(to bottom,#43e3fe,#f11d7a);background-clip:text;-webkit-background-clip:text;color:transparent}.float-right{float:right}p.error{margin:-15px 0 20px 0;text-align:center;font-weight:700;color:#d41d76}footer,header{background:#050b18;line-height:50px;box-shadow:0 0 1px 0 rgba(0,0,0,.1)}header{height:50px}footer{height:max-content;background:#030711;margin-top:10vh}.separator{height:3px;width:100%;background-image:linear-gradient(to right,#2473e9,#d41d76)}.card{width:620px;max-width:100%;background:#030711;box-shadow:1px 2px 1px 0 rgba(0,0,0,.05);margin:60px auto;padding:4%;}.animated-box,.animated-box2,.animated-box3,.animated-box4{position:relative;width:60%}.animated-box2{margin:auto;width:fit-content;height:90vh}.animated-box3{margin:inherit;width:inherit}.animated-box4{width:40%}.animated-box2:after,.animated-box3:after,.animated-box4:after,.animated-box:after{content:'';position:absolute;top:0;left:0;right:0;bottom:0;border-radius:4px;background:linear-gradient(120deg,#f11d7a,#43e3fe,#f11d7a,#43e3fe);background-size:300% 300%}.animated-box:after{clip-path:polygon(0 100%,4px 100%,4px 4px,calc(100% - 4px) 4px,calc(100% - 4px) calc(100% - 4px),4px calc(100% - 4px),4px 100%,100% 100%,100% 0,0 0)}.animated-box2:after{clip-path:polygon(0 100%,1px 100%,1px 1px,calc(100% - 1px) 1px,calc(100% - 1px) calc(100% - 1px),1px calc(100% - 1px),1px 100%,100% 100%,100% 0,0 0)}.animated-box3:after{clip-path:polygon(0 100%,2px 100%,2px 2px,calc(100% - 2px) 2px,calc(100% - 2px) calc(100% - 2px),2px calc(100% - 2px),2px 100%,100% 100%,100% 0,0 0)}.animated-box4:after{clip-path:polygon(0 100%,1px 100%,1px 1px,calc(100% - 1px) 1px,calc(100% - 1px) calc(100% - 1px),1px calc(100% - 1px),1px 100%,100% 100%,100% 0,0 0)}.animated-box.in:after,.animated-box2.in:after,.animated-box3.in:after,.animated-box4.in:after{animation:gradient-animation 8s ease-in-out infinite}@keyframes gradient-animation{0%{background-position:15% 0}50%{background-position:85% 100%}100%{background-position:15% 0}}@keyframes gradient-animation2{0%{background-position:0 0}50%{background-position:100% 100%}100%{background-position:0 0}}#myInput:focus,.animated-box textarea:focus{outline:0}.card h1.form-title{text-align:center;font-size:2em;margin-top:0;text-align:left;font-weight:700}.card h1.error{margin-bottom:0}h1.title{margin-top:20vh;text-align:center;font-size:3em}p.credits{text-align:center;color:#aaa;margin:-30px 0 0 0}form{margin:0;padding:0}form .form-group{margin-bottom:20px}form label{text-align:left;font-weight:700;margin-bottom:5px;display:block;font-family:Poppins,sans-serif;margin-top:2em}form input,select,textarea{display:block;width:100%;font-size:1em;border:1px solid #fff;height:48px;padding:6px 10px;border-radius:5px;box-shadow:none;box-sizing:border-box;margin-bottom:5px;background:#050b18;-webkit-appearance:none;color:#fff;font-family:Poppins,sans-serif;margin-top:1em}form input:focus,form textarea:focus,select:focus{outline:0}input:focus::-webkit-input-placeholder{color:#050b18}input[type=email],input[type=password],input[type=text]{padding:12px 16px;background-repeat:no-repeat;text-indent:35px;background-position:10px 10px}form input[type=submit]{background:linear-gradient(to right,#43e3fe,#f11d7a);border:none;color:#fff;font-size:1em;letter-spacing:1px;font-weight:700;margin-bottom:0;margin-top:3em;align-items:center}form input[type=submit]:hover{background:linear-gradient(to right,#a1effd,#fa8fbe)}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.mob-logo{display:none}img.footer-logo{margin:1rem 1rem 4rem 1rem}img.footer-logo:hover{background-color:#dcdcdc;filter:invert(100%)}.gol{padding:13px;border-radius:100%;border-color:#000;height:60px;width:60px}.gol.fb{border-radius:20%}#img1{filter:invert(100%)}.previous{font-size:50px;margin:0 auto;text-align:center}
+    .desktop-nav ul{list-style:none;margin:0;padding-left:0;padding-top:10px;padding-right:15px}.desktop-nav ul li{display:inline-block;list-style:none}.desktop-nav ul li a{color:inherit;height:50px;display:block;border:none;text-decoration:none;font-weight:700;font-size:1.3em;margin-right:2em}.desktop-nav ul li a:hover{color:#e309a2}#nav.mobile-nav{margin:auto;font-size:34px;width:100vw;height:100vh;margin-top:120px}.mobile-nav ul{padding:0 50px 50px 50px;margin:auto;list-style-type:none;padding-bottom:90px}.mobile-nav ul li{display:flex;align-items:center;justify-content:center;padding-top:80px}.mobile-nav ul li a{text-align:center}.hidden{display:none}.notHidden{display:block}.mobile-nav ul.animated-box4.in{height:max-content;width:max-content;background:#030711}.hamburger-menu{display:none;height:100px;padding:35px 10px;transition:all .4s ease-in-out}.hamburger-menu:hover{cursor:pointer}.hamburger-menu .menu-item{display:block;height:2px;margin:0 0 7px;transition:all .3s ease-in-out;background-image:linear-gradient(to bottom right,#42e6ff,#f11d7a);background-size:100px;width:30px}.hamburger-menu.open .menu-item{margin:0 0 5px}.hamburger-menu .menu-item:nth-child(2),.hamburger-menu .menu-item:nth-child(3){background-position-y:50px}.hamburger-menu.open .menu-item:first-child{transform:rotate(45deg);transform-origin:6px}.hamburger-menu.open .menu-item:nth-child(2){opacity:0}.hamburger-menu.open .menu-item:nth-child(3){transform:rotate(-45deg);transform-origin:4px}.active{background-image:linear-gradient(to right,#42e6ff 0,#f11d7a 100%);background-size:40px 2px;background-position-y:40px;background-repeat:no-repeat}
+    .card.question-card{width:680px;padding:3%; font-size:20px}.card.question-card p{margin-top:0}.card.question-card p span{display:block}.card.question-card p span.userLevel{font-weight:700}.card.question-card p span.question{white-space:pre-line;max-width:100%;}.card.question-card input,.card.question-card textarea{margin-bottom:0;font-size:15px}.question-card input{text-indent:1px}
+    .hide{display:none;}
+    .check{position:fixed; bottom: 20px;}
+    @media (min-width:750px){.container{width:100%}.column,.columns{margin-left:4%}.column:first-child,.columns:first-child{margin-left:0}.one.column,.one.columns{width:4.66666666667%}.two.columns{width:13.3333333333%}.three.columns{width:22%}.four.columns{width:30.6666666667%}.five.columns{width:39.3333333333%}.six.columns{width:48%}.seven.columns{width:56.6666666667%}.eight.columns{width:65.3333333333%}.nine.columns{width:74%}.ten.columns{width:82.6666666667%}.eleven.columns{width:91.3333333333%}.twelve.columns{width:100%;margin-left:0}}@media (min-width:500px){.sphere path{stroke-width:.4px}}@media (max-width:750px){header{padding-top:0;height:6vh}nav{height:100vh;padding:10px 2.5px;position:absolute;left:0;right:0;top:0;white-space:nowrap;text-align:left;z-index:9000;font-size:10px}.desktop-nav{display:none}.hamburger-menu{display:inline-block;margin-right:25px}.mob-logo{position:absolute;max-height:80px;left:0;margin-top:16px;margin-left:10px;display:inline-block}section#main{margin-top:60px}p.credits{font-size:.8em}footer nav li a,header nav li a{height:30px!important;line-height:30px!important}header .left{display:none}header a.active{background:0 0}.simplebar-track.simplebar-vertical{width:5px;right:0}.card{width:92vw;padding:40px;top:10vh}.card h1.form-title{font-size:1.1em}.card p{font-size:.6em;margin-top:10px}.card label{font-size:.8em}.card input{font-size:.8em;height:40px;background-position:6px 6px;text-indent:28px}.card input[type=submit]{text-indent:0}.card.question-card{width:400px;padding:40px}.card.question-card p{font-size:1em}h1.title{font-size:2em}.animated-box3.play-page{margin:auto;margin-top:50px}.card.question-card input{text-indent:0}h1.center{font-size:1.5em;margin-top:10px}#rules.card ul{margin-top:-25px}#rules.card li{font-size:10px;margin-left:-25px}#rules.card{height:fit-content;width:92vw;padding:40px}.card.leaderboard{width:92vw;padding-top:8vh}.card.leaderboard #leader{font-size:2em}.flex{padding-top:3vh;display:block}.flex img{height:50px;width:50px}.arrow{float:right;width:100%;right:0}.arrows{margin:auto;margin-top:20px;width:100%}.arrow:nth-child(1){margin-right:50px}.arrow:nth-child(2){margin-right:10px}#myInput{font-size:.8em;height:40px;background-position:10px 12px;text-indent:18px;background-size:15px 15px}.animated-box.in{margin:auto;height:40px;width:90%}.animated-box:after{clip-path:polygon(0 100%,2px 100%,2px 2px,calc(100% - 2px) 2px,calc(100% - 2px) calc(100% - 2px),2px calc(100% - 2px),2px 100%,100% 100%,100% 0,0 0)}#myTable{padding:20px;padding-top:90px}.card.leaderboard table th{font-size:1.2em}.card.leaderboard table td{font-size:1em}}@media (min-width:750px) and (max-width:1112px){.desktop-nav{display:none}.hamburger-menu{display:inline-block}nav{z-index:9000}#nav.mobile-nav{position:absolute}.mob-logo{position:absolute;max-height:100px;height:80px;left:0;top:0;margin-left:50px;display:inline-block;margin-top:16px}header{height:15vh}.handletter{display:none}.eight.columns{width:90%}.eight.columns.right{top:0}.card{width:70vw;padding:80px}h1.center{font-size:2em;margin-top:20px}#rules.card li{font-size:14px;margin-left:-25px}#rules.card{height:fit-content}}
+        /*------------------ PRELOADER ------------------*/
+    /* #main{
+        opacity:0;
+        animation: fadeIn 1s;
+        animation-fill-mode: forwards;
+    }  */
+    .loader {
+        position: absolute;
+        z-index: 999999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #080808;
+    }
+
+
+    .loader.hidden1 {
+        transition: all 1s ease-in-out;
+        animation: fadeOut 0.5s;
+        animation-fill-mode: forwards;
+    }
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+        }
+        50% {
+            opacity: 0.9;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    .loader {
+        max-width: 100vw;
+        background: #0f0c29;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        display: flex;
+    }
+
+    
+    .loadcontainer {
+        width: 100%;
+        height: 100%;
+        color: #222;
+        overflow: hidden;
+    }
+
+    .side {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .side > * {
+        opacity:0.6;
+        animation: bottom 1.5s ease infinite;
+        position: relative;
+        max-width: 100%;
+        max-height: 100%;
+        width: 20%;
+        height: 20%;
+        margin:20px;
+    }
+    .two{
+        animation-delay:0.2s
+    }
+    .three{
+        animation-delay:0.4s
+    }
+
+    @keyframes bottom2 {
+        0% {
+            transform: rotateY(0deg);
+        }
+        25% {
+            transform: rotateY(0deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+        }
+        75% {
+            transform: rotateY(360deg);
+        }
+        100% {
+            transform: rotateY(360deg);
+        }
+    }
+    @keyframes bottom {
+        0% {
+            opacity:0.4;
+        }
+        80%{
+            opacity:1;
+        }
+        100% {
+            opacity:0.4;
+        }
+    }
+    .outro{
+        animation: exit 0.3s;
+        animation-delay : 0.5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes exit {
+        from {
+            margin-top: 0vh;
+            display: block;
+        }
+        to {
+            margin-top: 100vh;
+            display: none;
+        }
+    }
+    @media (max-width:750px) {
+        .side > * {
+            height: 20%;
+            width: 20%;
+        }   
+    }
+    @media (min-width:750px) and (max-width:1112px) {
+        .side > * {
+            height: 20%;
+            width: 20%;
+        }   
+    }
+    .question-card{
+        word-wrap: break-word;
+    }
+    .hintbox{position:fixed;right:0;margin-top:-50vh;margin-right:50px;height:30vh;width:20vw;background:#030711;display:flex;justify-content:center;align-items:center;flex-flow:column}
+    .hintbox h1{text-align:center !important;padding-top:30px}
+    .hintbox ul, .hintbox li{padding:0;margin:0;word-wrap: break-word;text-align:center;list-style-type:none}
+    @media (max-width:1300px){
+        .hintbox{
+            display:none;
+        }
+    }
+  if !error
+    .loader
+      .loadcontainer
+        .side
+          img(src='https://steady-starburst-28a19a.netlify.app/img/decypher.png' alt='decypher')
+  h1.title D E (C) Y P H E R
+  .card.question-card
+    if error
+      p.error= error
+    if isOver
+      img(src='https://transcendent-cocada-cde0ba.netlify.app/img/tenor.gif', alt='Tum jeet gayye!', class='end')
+      img(src='https://transcendent-cocada-cde0ba.netlify.app/img/tenor.gif', alt='Tum jeet gayye!', class='end')
+    else
+      p
+        p.hide #{currentUser.level}
+        if currentUser.level == 2.1
+          span.userLevel Level 3:
+        else if currentUser.level == 2.2
+          span.userLevel Level 4:
+        else
+          span.userLevel Level #{currentUser.level}:
+        br
+        span.question 7H15 QU35710N W111 83 QU173 4DV3N7Ur0U5 Y0U M16H7 3V3N N33D 70 600613 50M3 57UFF H4V3 Y0U 3V3r 7r13D CH4N61N6 4 W38P463 70 4N07H3r 14N6U463
+        br
+        br
+        span.question 87W D1D Y0U 11K3 7H3 100P QU35710N  4NYW4Y5 WH47 W0U1D 1 C411 Y0U?
+        br
+        br
+        span.question 7H3 K3Y 87W 15 Cr3573DW1N50V3rCYCH3
+        br
+        br
+      form(method='post', action='/play/leet')
+        .animated-box3.in.play-page
+          input.answerform(type='text', placeholder='Press enter to submit', name='answer', maxlength='30', id="answer", autocomplete="off" required)
+        input(type='submit', value='Go')
+
+  script.
+    /**
+    * Dubiously created by Adrian Cooney
+    * http://adriancooney.github.io
+    */
+    (function(console) {
+        "use strict";
+
+        //Bootlegged of imgur.com/memegen
+        var memes = {"10 Guy":"//i.imgur.com/LaENqOV.jpg","3rd World Success Kid":"//i.imgur.com/WA5duA1.jpg","90's Problems":"//i.imgur.com/tL47qtp.jpg","Aaand It's Gone":"//i.imgur.com/yf12saq.jpg","Actual Advice Mallard":"//i.imgur.com/WymFmVy.jpg","Advice Dog":"//i.imgur.com/Qk0VO6D.jpg","Advice God":"//i.imgur.com/xH2fSFg.jpg","Almost Politically Correct Redneck":"//i.imgur.com/YqLgINf.jpg","Am I The Only One":"//i.imgur.com/gS9YL5U.jpg","Ancient Aliens":"//i.imgur.com/NfCknz0.jpg","Annoyed Picard":"//i.imgur.com/s9GmfSS.jpg","Annoying Childhood Friend":"//i.imgur.com/27VCyQw.jpg","Annoying Facebook Girl":"//i.imgur.com/ccczyGt.jpg","Anti-Joke Chicken (Rooster)":"//i.imgur.com/KOsW0jh.jpg","Awkward Penguin":"//i.imgur.com/ez1tQrq.jpg","Back In My Day Grandpa":"//i.imgur.com/zuJSZp8.jpg","Bad Advice Mallard":"//i.imgur.com/QEPvL2B.jpg","Bad Luck Brian":"//i.imgur.com/sRW8BiO.jpg","Bear Grylls":"//i.imgur.com/6Spqy1D.jpg","Brace Yourself":"//i.imgur.com/NhIq0LY.jpg","Captain Obvious":"//i.imgur.com/DmUcxBu.jpg","Chemistry Cat":"//i.imgur.com/8agP4Xe.jpg","College Freshman":"//i.imgur.com/2Ynyv9t.jpg","College Liberal":"//i.imgur.com/OWfvSFE.jpg","Condescending Wonka":"//i.imgur.com/D0e5fgL.jpg","Confession Bear":"//i.imgur.com/kH1SKhp.jpg","Confession Kid":"//i.imgur.com/jhOxR12.jpg","Confused Gandalf":"//i.imgur.com/iIb5SEo.jpg","Conspiracy Keanu":"//i.imgur.com/pFyk3J7.jpg","Courage Wolf":"//i.imgur.com/H5qoXFb.jpg","Dating Site Murderer":"//i.imgur.com/jffNNql.jpg","Depression Dog":"//i.imgur.com/wgad6P8.jpg","Drunk Baby":"//i.imgur.com/QvZdbRE.jpg","English Motherfucker":"//i.imgur.com/sJThEC0.jpg","Evil Plotting Raccoon":"//i.imgur.com/xMslWFf.jpg","First Day On The Internet Kid":"//i.imgur.com/TWfdmVu.jpg","First World Cat Problems":"//i.imgur.com/0vR5Slq.jpg","First World Problem":"//i.imgur.com/ATcIl08.jpg","Forever Alone":"//i.imgur.com/pcfXSUU.jpg","Forever Resentful Mother":"//i.imgur.com/pIrdwo2.jpg","Foul Bachelor Frog":"//i.imgur.com/JUFmusm.jpg","Foul Bachelorette Frog":"//i.imgur.com/dYf971U.jpg","Friendzone Fiona":"//i.imgur.com/Qu1eedL.jpg","Frustrated Farnsworth":"//i.imgur.com/U3SElKP.jpg","Fuck Me, Right?":"//i.imgur.com/J9gfxsx.jpg","Gangster Baby":"//i.imgur.com/C3XhI56.jpg","Good Girl Gina":"//i.imgur.com/qK6lYr2.jpg","Good Guy Greg":"//i.imgur.com/UXMPoKN.jpg","Grandma Finds The Internet":"//i.imgur.com/xPfGYqu.jpg","Grinds My Gears":"//i.imgur.com/t4JqU1j.jpg","Grumpy Cat (Tard)":"//i.imgur.com/dU5CDxN.jpg","High Expectations Asian Father":"//i.imgur.com/7QeB9LI.jpg","Hipster Barista":"//i.imgur.com/AbWxdy2.jpg","Horrifying House Guest":"//i.imgur.com/DxmoFp1.jpg","I Dare You Samuel Jackson":"//i.imgur.com/UQtpdqj.jpg","I Should Buy A Boat":"//i.imgur.com/XqlqPxn.jpg","I Too Like To Live Dangerously":"//i.imgur.com/qF70EL9.jpg","Idiot Nerd Girl":"//i.imgur.com/8hYPYwd.jpg","Insanity Wolf":"//i.imgur.com/GOOdg3k.jpg","Joker Mind Loss":"//i.imgur.com/qQIRaOD.jpg","Joseph Ducreux":"//i.imgur.com/QL7TyR9.jpg","Lame Joke Eel":"//i.imgur.com/oQXw3jF.jpg","Lame Pun Raccoon":"//i.imgur.com/nvALRK3.jpg","Lazy College Senior":"//i.imgur.com/PpkVfzz.jpg","Mad Karma":"//i.imgur.com/G0QMPum.jpg","Masturbating Spidey":"//i.imgur.com/dZ7AB4c.jpg","Matrix Morpheus":"//i.imgur.com/8Yrw6cZ.jpg","Mayonnaise Patrick":"//i.imgur.com/5jE0Y7f.jpg","Musically Oblivious 8th Grader":"//i.imgur.com/l5YHN5D.jpg","Not Sure Fry":"//i.imgur.com/7rFgBB1.jpg","Oblivious Suburban Mom":"//i.imgur.com/Y7o7UJs.jpg","One Does Not Simply":"//i.imgur.com/7LrwR1Y.jpg","Overly Attached Girlfriend":"//i.imgur.com/5blLJLR.jpg","Overly Manly Man":"//i.imgur.com/dOSn9Na.jpg","Paranoid Parrot":"//i.imgur.com/KooYHdg.jpg","Pedobear":"//i.imgur.com/c6JZKRW.jpg","Pepperidge Farm Remembers":"//i.imgur.com/uFde4v5.jpg","Philosoraptor":"//i.imgur.com/eERhI5h.jpg","Priority Peter":"//i.imgur.com/BBEFk0e.jpg","Rasta Science Teacher":"//i.imgur.com/Js6Ai5T.jpg","Redditor's Wife":"//i.imgur.com/d1XfJeD.jpg","Revenge Band Kid":"//i.imgur.com/dlvmaRI.jpg","Schrute Facts":"//i.imgur.com/UxcvPwT.jpg","Scumbag Brain":"//i.imgur.com/OZhhZdS.jpg","Scumbag Stacy":"//i.imgur.com/Qqz1axp.jpg","Scumbag Steve":"//i.imgur.com/Rfvoc0Y.jpg","Sexually Oblivious Rhino":"//i.imgur.com/RoaNuEC.jpg","Sheltering Suburban Mom":"//i.imgur.com/vMkSofv.jpg","Shut Up And Take My Money":"//i.imgur.com/uWe0rtQ.jpg","Skeptical Third World Kid":"//i.imgur.com/uwAusxV.jpg","Smug Spongebob":"//i.imgur.com/OTTRjrv.jpg","Socially Awesome Penguin":"//i.imgur.com/S6WgQW7.jpg","Success Kid":"//i.imgur.com/ZibijBz.jpg","Successful Black Man":"//i.imgur.com/ogIm0cy.jpg","Sudden Clarity Clarence":"//i.imgur.com/N3Xmfbe.jpg","Tech Impaired Duck":"//i.imgur.com/riz28ci.jpg","The Most Interesting Man In The World":"//i.imgur.com/MGv15MH.jpg","The Rent Is Too High":"//i.imgur.com/r5WLktQ.jpg","Tough Spongebob":"//i.imgur.com/2w0F1HX.jpg","Unhelpful Highschool Teacher":"//i.imgur.com/ohbGhuD.jpg","Vengeance Dad":"//i.imgur.com/0nUStsa.jpg","What Year Is It?":"//i.imgur.com/fj79hQS.jpg","X, X Everywhere":"//i.imgur.com/GGy94Gt.jpg","Yeah That'd Be Great":"//i.imgur.com/nz9M2pl.jpg","Yo Dawg Xzibit":"//i.imgur.com/XOyGqF2.jpg","You're Bad And You Should Feel Bad":"//i.imgur.com/YsabGnQ.jpg","You're Gonna Have A Bad Time":"//i.imgur.com/2tNR7P7.jpg"};
+
+        /**
+        * Since the console.log doesn't respond to the `display` style,
+        * setting a width and height has no effect. In fact, the only styles
+        * I've found it responds to is font-size, background-image and color.
+        * To combat the image repeating, we have to get a create a font bounding
+        * box so to speak with the unicode box characters. EDIT: See Readme.md
+        *
+        * @param  {int} width  The height of the box
+        * @param  {int} height The width of the box
+        * @return {object}     {string, css}
+        */
+        function getBox(width, height) {
+            return {
+                string: "+",
+                style: "font-size: 1px; padding: " + Math.floor(height/2) + "px " + Math.floor(width/2) + "px; line-height: " + height + "px;"
+            }
+        }
+
+        /**
+        * Draw's meme text on a context.
+        *
+        * @param  {CanvasRenderingContext2D} ctx   The canvas context
+        * @param  {string} type  "upper"|"lower"
+        * @param  {string} text  The text to draw
+        * @param  {int} width The width of the image
+        * @param  {int} y     The y value to draw at
+        * @return {null}
+        */
+        function drawMemeText(ctx, type, text, width, y) {
+            text = text.toUpperCase();
+            //Determine the font size
+            if(text.length < 24) {
+                var val = Math.max(0, text.length - 12),
+                    size = 70 + (val * - 3);
+
+                drawText(ctx, size, text, width/2, y);
+            } else if(text.length < 29) {
+                drawText(ctx, 40, text, width/2, y);
+            } else {
+                var strs = wrap(text, 27);
+                strs.forEach(function(str, i) {
+                    drawText(ctx, 40, str, width/2, (type == "lower") ? (y - ((strs.length - 1) * 40)) + (i * 40) : y + (i * 40));
+                });
+            }
+        }
+
+        /**
+        * Draws text in impact font with stroke on context
+        *
+        * @param  {CanvasRenderingContext2D} ctx  The canvas context
+        * @param  {int} size Font size
+        * @param  {string} text The string to write
+        * @param  {int} x    X Position
+        * @param  {int} y    Y position
+        * @return {null}
+        */
+        function drawText(ctx, size, text, x, y) {
+            //Set the text styles
+            ctx.font = "bold " + size + "px Impact";
+            ctx.fillStyle = "#fff";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.lineWidth = 7;
+            ctx.strokeStyle = "#000";
+            ctx.strokeText(text, x, y);
+            ctx.fillText(text, x, y);
+        }
+
+        /**
+        * Wrap a line of text at an index
+        *
+        * @param  {string} text The text
+        * @param  {int} num  The index to wrap at
+        * @return {array}      Array of text
+        */
+        function wrap(text, num) {
+            var output = [],
+                split = text.split(" ");
+
+            var str = [];
+            for(var i = 0, cache = split.length; i < cache; i++) {
+                if((str + split[i]).length < num) str.push(split[i])
+                else {
+                    output.push(str.join(" "));
+                    str.length = 0;
+                    str.push(split[i]);
+                }
+            }
+
+            //Push the final line
+            output.push(str.join(" "));
+
+            return output;
+        }
+
+        /**
+        * Add a meme to the console!
+        *
+        * @param  {string} upper  The upper text
+        * @param  {string} lower  The lower text
+        * @param  {string} image  The meme type (see `console.meme` for all supported) or image url (Make sure it's CORS enabled)
+        * @param  {int} width  The width of the meme
+        * @param  {int} height The height of the meme
+        * @return {null}
+        */
+        console.meme = function(upper, lower, image, width, height) {
+            if(!upper) console.error("Yo, you forgot the text for the upper part of the meme. The bit at the top. Yeah, that bit.");
+            if(!lower) console.error("You forgot the text for the bottom of the meme, stupid.");
+            if(!image) console.error("Dude, you forgot the meme type or url for the background image (CORS enabled, *hint* imgur *hint*). To see a list of supported memes, hit `console.meme()`");
+            if(!upper && !lower && !image) return console.log("> " + Object.keys(memes).join("\n> "));
+
+            var canvas = document.createElement("canvas"),
+                ctx = canvas.getContext("2d"),
+                width = width || 500,
+                height = width || 500,
+                //I tweaked it at these dimensions,
+                //So everything scales from here
+                _w = 500, _h = 500;
+
+            var img = new Image();
+                img.setAttribute('crossOrigin','anonymous');
+            img.onload = function() {
+                canvas.width = width;
+                canvas.height = height;
+
+                var text = upper.toUpperCase();
+
+                ctx.scale(width/500, height/500);
+
+                //Draw the background
+                ctx.drawImage(this, 0, 0, _w, _h);
+
+                drawMemeText(ctx, "upper", upper, _w, 50); //upper
+                drawMemeText(ctx, "lower", lower, _w, _h - 50); //upper
+
+                console.image(canvas.toDataURL());
+            };
+
+            if(memes[image]) var url = memes[image];
+            else var url = image;
+
+            img.src = url; //"http://www.corsproxy.com/" + url.replace(/https?:\/\//, "");
+        };
+
+        /**
+        * Display an image in the console.
+        * @param  {string} url The url of the image.
+        * @param  {int} scale Scale factor on the image
+        * @return {null}
+        */
+        console.image = function(url, scale) {
+            scale = scale || 1;
+            var img = new Image();
+
+            img.onload = function() {
+                var dim = getBox(this.width * scale, this.height * scale);
+                console.log("%c" + dim.string, dim.style + "background: url(" + url + "); background-size: " + (this.width * scale) + "px " + (this.height * scale) + "px; color: transparent;");
+            };
+
+            img.src = url;
+        };
+    })(console);
+    var trust = document.getElementsByClassName('hide')[0]
+    if (trust.innerHTML == '23'){
+        console.image("https://transcendent-cocada-cde0ba.netlify.app/img/afFASEFw.jpg")
+    }
+    document.getElementById("playnav").classList.toggle("active");
+    document.getElementById("playnav").style.backgroundSize = "30px 2px";
+    window.addEventListener("DOMContentLoaded", function(event) {
+      if(document.getElementById('answer')) {
+        document.getElementById('answer').addEventListener('input', function(){
+          this.value = this.value.replace(/\s+/g, '').toLowerCase().replace("'", "");
+        });
+      }
+    });
+    var loader = document.querySelector(".loader");
+    var side = document.querySelector(".side");
+    function loadFunction() {
+        loader.className += " hidden1"; // class "loader hidden"
+    }
+    window.addEventListener("load", function() {
+        side.className += " outro"
+        setTimeout(loadFunction, 500);
+        setTimeout(hideit, 1000);
+    });
+    

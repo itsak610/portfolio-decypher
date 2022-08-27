@@ -1,0 +1,15 @@
+extends admin-layout
+
+block content
+  .card
+    h1.form-title Add a Question
+    if error
+      p.error= error
+    form(method='post', action='/admin/add-question')
+      input(type='number', name='level', placeholder='Level',step=".1", required)
+      textarea(placeholder='Question', name='question' required)
+      textarea(placeholder='Hint 1 (if any)', name='hint1')
+      textarea(placeholder='Hint 2 (if any)', name='hint2')
+      textarea(placeholder='Hint 3 (if any)', name='hint3')
+      input(type='text', placeholder='Answer', name='answer', id="answer" required)
+      input(type='submit', value='Add Question')    

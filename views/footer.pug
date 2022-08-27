@@ -1,0 +1,148 @@
+.separator
+footer#main
+    style.
+        /*----------------------------------------------FOOTER----------------------------------------------*/
+        .separator{
+            margin-top:7em;
+            height:3px;
+            width:100%;
+            background-image:linear-gradient(to right,#2473e9,#d41d76)
+        }
+        footer {
+            height:fit-content;
+            min-height:30vh;
+            padding: 2vw 3vw;
+            padding-top:3vw !important;
+            display: flex;
+            align-items: center;
+            flex-flow: column;
+            background: #030711;
+            margin-top:0;
+            line-height: 4vh !important;
+            letter-spacing: .1em;
+        }
+        
+        footer h2 {
+            color: #fff !important;
+            font-weight: 300;
+        }
+        
+        .imp-links {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row;
+            height: 80%;
+            width: 100%;
+        }
+        
+        .left-footer {
+            padding: 20px;
+            width: 50%;
+        }
+        
+        .left-footer p {
+            font-weight: 100;
+        }
+        
+        .right-footer {
+            display: flex;
+            width: 50%;
+            flex-flow: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .links {
+            width: 100%;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-flow: row;
+        }
+        
+        .links ul li {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .links ul li a {
+            text-decoration:none;
+            color: #fff !important;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 5px;
+            transition: 0.3s ease-in-out;
+        }
+        
+        .links ul li a:hover {
+            color: #F11D7A !important;
+            border-bottom: 1px #F11D7A solid;
+        }
+        @media (max-width:750px) {
+            .seperator{
+                margin-top:12em;
+            }
+            footer{
+                height: fit-content;
+                padding-top:50px;
+            }
+            footer h2{
+                font-size:13px;
+            }
+            footer p{
+                font-size: 8px;
+            }
+            footer a{
+                font-size: 9px;
+            }
+        }
+        @media (min-width:750px) and (max-width:1112px) {
+            .seperator{
+                margin-top:12em;
+            }
+            footer{
+                height: fit-content;
+            }
+            footer h2{
+                font-size:16px;
+            }
+            footer p{
+                font-size: 10px;
+            }
+            footer a{
+                font-size: 12px;
+            }
+        }
+
+    .imp-links
+        .left-footer
+            h2
+                | de(c)ypher will be held from the 7th of August to the 8th of August.
+            br
+            p
+                | For any further queries, please contact Mr. Anurag Sehgal: +91
+                | 7869119509
+            p
+                | The results will be declared on 11th of August. See you there!
+        .right-footer
+            h2 More Links
+            .links
+                .right1
+                    ul
+                        li
+                            a(href='/register') Register
+                        li
+                            a(href='/login') Login
+                        li
+                            a(href='/rules') Rules
+                .right2
+                    ul
+                        li
+                            a(href='https://www.instagram.com/cypherdps/' rel="noreferrer" target='_blank') Instagram
+                        li
+                            a(href='https://discord.gg/FWrfqAJ2ZY' rel="noreferrer" target='_blank') Discord
+                        li
+                            a(href='https://www.youtube.com/channel/UCSULXN5apeQSDa0sLYuwEnA' rel="noreferrer" target='_blank') YouTube
+    .last
+        p With &#x1F497; from (c)lub (c)ypher

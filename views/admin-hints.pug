@@ -1,0 +1,19 @@
+extends admin-layout
+
+block content
+  style.
+    p.error{margin:-15px 0 20px 0;text-align:center;font-weight:700;color:#d41d76}
+  .card.manage.levels
+    h1.form-title Add Hints
+    if error
+      p.error= error
+    form(method='post', action='/admin/hints')
+      label.single Level: 
+      select.select-teams(name='levels')
+        each question in questions
+          option= question.level
+      label.single Hint: 
+      textarea(placeholder='Hint' name='hint')
+      input(type='submit', value='Add Hint')
+    br
+    br

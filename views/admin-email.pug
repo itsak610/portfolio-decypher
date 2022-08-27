@@ -1,0 +1,18 @@
+extends admin-layout
+
+block content
+  style.
+    p.error{margin:-15px 0 20px 0;text-align:center;font-weight:700;color:#d41d76}
+  .card.manage.levels
+    h1.form-title Email
+    if error
+      p.error= error
+    form(method='post', action='/admin/email')
+      label.single Content: 
+      textarea(placeholder='Content' name='content')
+      input(type='submit', value='Send Mail')
+    br
+    br
+    h1.center OR
+    form(method='post', action='/admin/email/verify')
+      input(type='submit', value='Send Verification Mail')

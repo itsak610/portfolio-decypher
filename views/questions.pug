@@ -1,0 +1,33 @@
+extends admin-layout
+
+block content
+  .card.manage.levels
+    h1.form-title Manage Questions
+    form(method='post', action='/admin/questions')
+      label Select level:
+      select.select-teams(name='level', id='selectedQuestion' onChange='updateValues(this.value)')
+        each question in questions
+          option= question.level
+      label.single Question: 
+      textarea(placeholder='Question' name='question')#currentQuestion
+      textarea(placeholder='Hint 1 (if any)' name='hint1')#hint1
+      textarea(placeholder='Hint 2 (if any)' name='hint2')#hint2
+      textarea(placeholder='Hint 3 (if any)' name='hint3')#hint3
+      label.single Answer: 
+      input(placeholder='Answer' name='answer')#currentAnswer
+      input(type='submit', value='Change question')
+
+          
+  script(type='text/javascript').
+    var questions = !{JSON.stringify(questions)};
+    function updateValues(selectedQuestion) {
+      var array = questions.filter(function(question) {
+        return question.level == selectedQuestion;
+      });
+      document.getElementById('currentQuestion').innerHTML = array[0].question;
+      document.getElementById('currentAnswer').value = array[0].answer;
+      document.getElementById('hint1').value = array[0].hint1;
+      document.getElementById('hint2').value = array[0].hint2;
+      document.getElementById('hint3').value = array[0].hint3;
+    }
+    
