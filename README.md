@@ -1,2 +1,2 @@
-# enigma
-A web-app for an online hunt
+# de(c)ypher
+This event was conducted in 2019 by the tech club of Delhi Public School Neelbad. The website is now being used for the developers' portfolios. You can find the website here- https://decypher-portfolio.herokuapp.com/

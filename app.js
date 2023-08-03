@@ -29,45 +29,39 @@ mongoose.Promise = require("bluebird");
 var app = express();
 
 //Make new databse
-// mongoose.connect("mongodb://admin:ofdRheYoo1ACnTlL@SG-decypher-18427.servers.mongodirector.com:47575,SG-decypher-18428.servers.mongodirector.com:47575,SG-decypher-18429.servers.mongodirector.com:47575/admin?replicaSet=RS-decypher-0&ssl=true");
-// mongoose.connect("mongodb://admin:cypherites8@ds037467.mlab.com:37467/decypher")
-// mongoose.connect("mongodb+srv://ItsAkBxtches:Hi_People_610@cluster0.qtfja.mongodb.net/test")
-mongoose.connect(
-    "mongodb+srv://itsak:hipeople@decypher.xqywf.mongodb.net/decypher?authSource=admin&replicaSet=atlas-sx58na-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
-    // mongoose.connect(
-    //   "mongodb://itsak:hipeople@decypher-shard-00-00.xqywf.mongodb.net:27017,decypher-shard-00-01.xqywf.mongodb.net:27017,decypher-shard-00-02.xqywf.mongodb.net:27017/decypher?ssl=true&replicaSet=atlas-sx58na-shard-0&authSource=admin&retryWrites=true&w=majority",
-    {
-        useNewUrlParser: true,
-        useFindAndModify: false,
-        useUnifiedTopology: true,
-    }
-);
-mongoose.set("useNewUrlParser", true);
-mongoose.set("useFindAndModify", false);
-mongoose.set("useCreateIndex", true);
-// mongoose.connect("mongodb://localhost:27017/decypher")
-var db = mongoose.connection;
+// mongoose.connect(
+//     "mongo srv link goes here",
+//     {
+//         useNewUrlParser: true,
+//         useFindAndModify: false,
+//         useUnifiedTopology: true,
+//     }
+// );
+// mongoose.set("useNewUrlParser", true);
+// mongoose.set("useFindAndModify", false);
+// mongoose.set("useCreateIndex", true);
+// var db = mongoose.connection;
 //If Mongo Error
-db.on("error", console.error.bind(console, "connection error"));
+// db.on("error", console.error.bind(console, "connection error"));
 app.set("trust proxy", 1);
 //Setting up sessions+cookies
-var sessionConfig = {
-    secret: "MucahitBruh",
-    resave: false,
-    saveUninitialized: false,
-    store: MongoStore.create({
-        mongoUrl:
-            "mongodb+srv://itsak:hipeople@decypher.xqywf.mongodb.net/decypher?authSource=admin&replicaSet=atlas-sx58na-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
-    }),
-};
-app.use(session(sessionConfig));
-app.use(passport.initialize());
-app.use(passport.session());
+// var sessionConfig = {
+//     secret: "MucahitBruh",
+//     resave: false,
+//     saveUninitialized: false,
+//     store: MongoStore.create({
+//         mongoUrl:
+//             "mongo srv link goes here",
+//     }),
+// };
+// app.use(session(sessionConfig));
+// app.use(passport.initialize());
+// app.use(passport.session());
 
-var User = require("./models/user");
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+// var User = require("./models/user");
+// passport.use(new LocalStrategy(User.authenticate()));
+// passport.serializeUser(User.serializeUser());
+// passport.deserializeUser(User.deserializeUser());
 
 app.use((req, res, next) => {
     res.locals.currentUser = req.user;
@@ -95,7 +89,7 @@ app.set("views", __dirname + "/views");
 //   next();
 // });
 
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
     // Website you wish to allow to connect
     res.setHeader(
         "Access-Control-Allow-Origin",
